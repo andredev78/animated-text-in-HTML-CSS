@@ -1,0 +1,34 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(1, 6, 60);
+    align-items: center;
+}
+.text{
+    font-size: 300px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: monospace;
+    background: url("../src/background.png");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text 7.5s linear infinite;
+}
+@keyframes text{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
